@@ -1,3 +1,142 @@
-body {
-    background-color: red;
+/*--------------------------------------------------------------------
+         HTML TINYREF
+         By Ge Ricci, 2016
+-------------------------------------------------------------------- */
+
+/* ------------------------------ RESET ---------------------------- */
+
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var, main, figure,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+	margin: 0;
+	padding: 0;
+	border: 0;
 }
+
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section {
+    display: block;
+}
+
+body {overflow-y: scroll;}
+
+/* --------------------------------------------------------------------------- */
+/* -------------------------- THEME'S DEFAULT VALUES ------------------------- */
+/* --------------------------------------------------------------------------- */
+
+/*! system-font.css v1.1.0 | CC0-1.0 License | github.com/jonathantneal/system-font-face */
+
+@font-face {
+	font-family: system-l;
+	font-style: normal;
+	font-weight: 300;
+	src: local(".SFNSText-Light"), local(".HelveticaNeueDeskInterface-Light"), local(".LucidaGrandeUI"), local("Ubuntu Light"), local("Segoe UI Light"), local("Roboto-Light"), local("DroidSans"), local("Tahoma");
+}
+
+@font-face {
+	font-family: system-li;
+	font-style: italic;
+	font-weight: 300;
+	src: local(".SFNSText-LightItalic"), local(".HelveticaNeueDeskInterface-Italic"), local(".LucidaGrandeUI"), local("Ubuntu Light Italic"), local("Segoe UI Light Italic"), local("Roboto-LightItalic"), local("DroidSans"), local("Tahoma");
+}
+
+@font-face {
+	font-family: system-reg;
+	font-style: normal;
+	font-weight: 400;
+	src: local(".SFNSText-Regular"), local(".HelveticaNeueDeskInterface-Regular"), local(".LucidaGrandeUI"), local("Ubuntu"), local("Segoe UI"), local("Roboto-Regular"), local("DroidSans"), local("Tahoma");
+}
+
+@font-face {
+	font-family: system-i;
+	font-style: italic;
+	font-weight: 400;
+	src: local(".SFNSText-Italic"), local(".HelveticaNeueDeskInterface-Italic"), local(".LucidaGrandeUI"), local("Ubuntu Italic"), local("Segoe UI Italic"), local("Roboto-Italic"), local("DroidSans"), local("Tahoma");
+}
+
+@font-face {
+	font-family: system-med;
+	font-style: normal;
+	font-weight: 500;
+	src: local(".SFNSText-Medium"), local(".HelveticaNeueDeskInterface-MediumP4"), local(".LucidaGrandeUI"), local("Ubuntu Medium"), local("Segoe UI Semibold"), local("Roboto-Medium"), local("DroidSans-Bold"), local("Tahoma Bold");
+}
+
+@font-face {
+	font-family: system-medi;
+	font-style: italic;
+	font-weight: 500;
+	src: local(".SFNSText-MediumItalic"), local(".HelveticaNeueDeskInterface-MediumItalicP4"), local(".LucidaGrandeUI"), local("Ubuntu Medium Italic"), local("Segoe UI Semibold Italic"), local("Roboto-MediumItalic"), local("DroidSans-Bold"), local("Tahoma Bold");
+}
+
+@font-face {
+	font-family: system-b;
+	font-style: normal;
+	font-weight: 700;
+	src: local(".SFNSText-Bold"), local(".HelveticaNeueDeskInterface-Bold"), local(".LucidaGrandeUI"), local("Ubuntu Bold"), local("Roboto-Bold"), local("DroidSans-Bold"), local("Segoe UI Bold"), local("Tahoma Bold");
+}
+
+@font-face {
+	font-family: system-bi;
+	font-style: italic;
+	font-weight: 700;
+	src: local(".SFNSText-BoldItalic"), local(".HelveticaNeueDeskInterface-BoldItalic"), local(".LucidaGrandeUI"), local("Ubuntu Bold Italic"), local("Roboto-BoldItalic"), local("DroidSans-Bold"), local("Segoe UI Bold Italic"), local("Tahoma Bold");
+}
+
+body {
+	font: 100%/1.52 system-reg, Arial, sans-serif;
+	color: #404040;
+	background: #FFF;
+}
+
+h1 {
+  font-size: 1.5em;
+	font: 5vmax/1.52 system-l, Arial, sans-serif;
+}
+p.baseline  {line-height: 1.2;}
+
+/* --------------------------------------------------------------------------- */
+/* -------------------------- PAGE STRUCTURE --------------------------------- */
+/* --------------------------------------------------------------------------- */
+
+#container {margin: 5%; margin: 5vh 5%;}
+
+header {text-align: center; margin-bottom: 5rem; margin-bottom: 10vmax;}
+
+/* --------------------------------------------------------------------------- */
+/* ------------------------------------ FORM --------------------------------- */
+/* --------------------------------------------------------------------------- */
+
+label {
+  display: block;
+  position:absolute;
+  width: 100%;
+  top: -0.5em;
+  left: 0;
+  font: 125%/1 system-b, Arial, sans-serif;
+  margin-bottom: 0.3rem;
+}
+
+input {
+  font: 2em/1.2 system-reg, Arial, sans-serif;
+  padding: 1rem;
+}
+input[type=text] {
+  width: 55%;
+  max-width: 15em;
+  border: 0;
+  border-bottom: 1px solid #CCC;
+}
+
+#htmlref-form {text-align: center;}
+
+  #htmlref-form p {display: inline; position: relative;}
+
+  #htmlref-form p:first-child::before, #htmlref-form p:first-child::after {
+    font-size: 4em;
+  }
+  #htmlref-form p:first-child::before {content: "<";}
+  #htmlref-form p:first-child::after {content: ">";}
