@@ -1,0 +1,28 @@
+{
+  "name": "10k-project",
+  "version": "1.0.0",
+  "description": "",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Gillespie59/10K-Project.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Gillespie59/10K-Project/issues"
+  },
+  "homepage": "https://github.com/Gillespie59/10K-Project#readme",
+  "devDependencies": {
+    "cheerio": "^0.20.0",
+    "gulp": "^3.9.1",
+    "gulp-clean-css": "^2.0.12",
+    "gulp-htmlmin": "^2.0.0",
+    "gulp-uglify": "^2.0.0",
+    "request": "^2.74.0",
+    "url-parse": "^1.1.3"
+  }
+}
