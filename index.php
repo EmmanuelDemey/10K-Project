@@ -4,13 +4,9 @@
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 	<meta content="width=device-width, initial-scale=1.0" name="viewport" />
-	<link href="img/favicon.png" type="image/png" rel="icon" />
 	<title>[  ]</title>
 
 	<link href="style.css" rel="stylesheet" type="text/css" media="all" />
-	<!--[if lt IE 9]>
-	<![endif]-->
-	<!-- SCRIPTS -->
 </head>
 
 <body>
@@ -23,7 +19,7 @@
 		</header>
 
 		<main>
-			<form id="htmlref-form" method="get" action="#">
+			<form id="htmlref-form" method="post" action="#">
 				<p><label for="element">HTML Element</label>
           <input type="text" id="element" name="element" list="elsList" /></p>
 				<p><input type="submit" value="OK" /></p>
@@ -168,6 +164,11 @@
           <option value="xmp">
         </datalist>
 			</form>
+      
+      <?php
+        require_once('attributes.php');
+      ?>
+
 		</main>
 
 	</div>
