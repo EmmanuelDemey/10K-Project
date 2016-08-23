@@ -102,7 +102,7 @@ p.baseline  {line-height: 1.2;}
 /* -------------------------- PAGE STRUCTURE --------------------------------- */
 /* --------------------------------------------------------------------------- */
 
-#container {margin: 5%; margin: 5vh 5%;}
+#container {min-width: 280px; margin: 5%; margin: 5vh 5%;}
 
 header {text-align: center; margin-bottom: 5rem; margin-bottom: 10vmax;}
 
@@ -114,7 +114,7 @@ label {
   display: block;
   position:absolute;
   width: 100%;
-  top: -0.5em;
+  top: 3rem;
   left: 0;
   font: 125%/1 system-b, Arial, sans-serif;
   margin-bottom: 0.3rem;
@@ -122,21 +122,28 @@ label {
 
 input {
   font: 2em/1.2 system-reg, Arial, sans-serif;
-  padding: 1rem;
 }
 input[type=text] {
   width: 55%;
   max-width: 15em;
+  padding: 1rem;
+	margin-bottom: 1rem;
   border: 0;
   border-bottom: 1px solid #CCC;
 }
 
+input[type=submit] {
+	font-size: 1em;
+	padding: 0.3em 0.5em;
+}
+
 #htmlref-form {text-align: center;}
 
-  #htmlref-form p {display: inline; position: relative;}
+  #htmlref-form p {position: relative;}
 
   #htmlref-form p:first-child::before, #htmlref-form p:first-child::after {
     font-size: 4em;
   }
   #htmlref-form p:first-child::before {content: "<";}
   #htmlref-form p:first-child::after {content: ">";}
+
