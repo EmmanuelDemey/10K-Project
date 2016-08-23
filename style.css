@@ -5,20 +5,13 @@
 
 /* ------------------------------ RESET ---------------------------- */
 
-html, body, div, span, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, font, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var, main, figure,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td {
+html, body, div, span, h1, h2, a, main, ul, li, form, label {
 	margin: 0;
 	padding: 0;
 	border: 0;
 }
 
-article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section {
+header, main {
     display: block;
 }
 
@@ -98,6 +91,35 @@ h1 {
 }
 p.baseline  {line-height: 1.2;}
 
+h2 {
+	text-align: center;
+	margin: 2rem 0 1rem;
+}
+
+ul {
+	display: flex;
+	display: -webkit-flex;
+	display: -ms-flex;
+	-webkit-flex-flow: row wrap;
+	-ms-flex-flow: row wrap;
+	flex-flow: row wrap;
+	width: 55%;
+	text-align: center;
+	margin: auto;
+}
+
+li {
+	min-width: 7em;
+	text-align: left;
+	margin: .5rem 3%;
+}
+
+.err {
+	text-align: center;
+  margin: 2rem;
+  color: red;
+}
+
 /* --------------------------------------------------------------------------- */
 /* -------------------------- PAGE STRUCTURE --------------------------------- */
 /* --------------------------------------------------------------------------- */
@@ -111,39 +133,43 @@ header {text-align: center; margin-bottom: 5rem; margin-bottom: 10vmax;}
 /* --------------------------------------------------------------------------- */
 
 label {
+	position: absolute;
   display: block;
-  position:absolute;
-  width: 100%;
-  top: 3rem;
+	width: 100%;
+	top: -2rem;
   left: 0;
   font: 125%/1 system-b, Arial, sans-serif;
-  margin-bottom: 0.3rem;
+  margin-bottom: .3rem;
+	transition: top 1s;
 }
 
+label.dyn {top: 3rem;}
+
+input::-webkit-calendar-picker-indicator {display: none;}
 input {
   font: 2em/1.2 system-reg, Arial, sans-serif;
 }
-input[type=text] {
+[type=text] {
   width: 55%;
   max-width: 15em;
   padding: 1rem;
 	margin-bottom: 1rem;
   border: 0;
   border-bottom: 1px solid #CCC;
+	text-align: center;
 }
 
-input[type=submit] {
+[type=submit] {
 	font-size: 1em;
-	padding: 0.3em 0.5em;
+	padding: .3em .5em;
 }
 
-#htmlref-form {text-align: center;}
+form {text-align: center;}
 
-  #htmlref-form p {position: relative;}
+  form p {position: relative;}
 
-  #htmlref-form p:first-child::before, #htmlref-form p:first-child::after {
+  form p:first-child::before, form p:first-child::after {
     font-size: 4em;
   }
-  #htmlref-form p:first-child::before {content: "<";}
-  #htmlref-form p:first-child::after {content: ">";}
-
+  form p:first-child::before {content: "<";}
+  form p:first-child::after {content: ">";}
