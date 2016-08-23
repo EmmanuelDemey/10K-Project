@@ -45,7 +45,7 @@ request("https://developer.mozilla.org/fr/docs/Web/HTML/Element", function(error
               attributes.add($(elt).text());
            });
 
-           fs.writeFile(`./api/${elementName}.json`, JSON.stringify({attributes:[...attributes]}), function(err) {
+           fs.writeFile(`./api/${elementName}.json`, JSON.stringify({attributes:[...attributes].sort()}), function(err) {
                 if(err) {
                     return console.log(err);
                 }
