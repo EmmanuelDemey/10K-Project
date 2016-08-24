@@ -54,7 +54,6 @@
           <option value="colgroup">
           <option value="command">
           <option value="content">
-          <option value="crawler">
           <option value="data">
           <option value="dd">
           <option value="decorator">

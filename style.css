@@ -126,6 +126,7 @@ input {
 
 [type=submit], [type=reset] {
 	font-size: 1em;
+	background: #E4E4E4;
 	padding: 0.3em 0.5em;
 	margin: 0.2rem;
 	border: 1px solid #CCC;
