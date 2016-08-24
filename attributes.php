@@ -10,7 +10,7 @@ if(isset($_POST['element'])){
     $attributes = $jfo->attributes;
 
     if(!isset($attributes)){
-        echo '<p class="err">Wrong element</p>';
+        echo '<p class="err">This element do not exist</p>';
         exit();
     }
     echo '<h2>Attributes for <a href="https://developer.mozilla.org/fr/docs/Web/HTML/Element/'.$_POST['element'].'">'.$_POST['element'].'</a></h2><ul>';

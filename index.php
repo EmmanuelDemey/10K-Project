@@ -22,7 +22,7 @@
 			<form id="htmlref-form" method="post" action="#">
 				<p><label for="element">HTML Element</label>
           <input type="text" id="element" name="element" list="elsList" value="<?= $_POST['element'] ?>"/></p>
-				<p><input type="submit" value="Show me the attributes" /></p>
+				<p><input type="submit" value="Show me the attributes" /><input type="reset" value="Reset" /></p>
 
         <datalist id="elsList">
           <option value="a">
