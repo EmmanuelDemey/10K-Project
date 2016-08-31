@@ -1,5 +1,6 @@
 if(document.querySelector('input[type="text"]').value == '') document.querySelector('label').className = 'dyn';
 document.querySelector('input[type="text"]').addEventListener('focus', function(){document.querySelector('label').className=''});
+document.querySelector('input[type="reset"]').addEventListener('click', function(){document.querySelector('h2').remove();document.querySelector('ul').remove();});
 document.querySelector('input[type="text"]').addEventListener('blur', function(){
   if(document.querySelector('input[type="text"]').value == ''){
       document.querySelector('label').className='dyn'
